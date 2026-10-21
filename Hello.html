@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f5f5;
+        }
+
+        .container {
+            width: 95%;
+            max-width: 1200px;
+            margin: 30px auto;
+            display: flex;
+            background: white;
+            min-height: 600px;
+            box-shadow: 0 5px 20px #bbb;
+        }
+
+        /* LEFT SECTION */
+        .left {
+            width: 28%;
+            background: #0aa83b;
+            color: white;
+            padding: 70px 30px;
+            display: flex;
+            align-items: center;
+        }
+
+        .left h1 {
+            font-size: 42px;
+            line-height: 1.4;
+        }
+
+        /* CENTER FORM */
+        .form-section {
+            width: 52%;
+            padding: 35px 40px;
+        }
+
+        .form-section h1 {
+            text-align: center;
+            color: #555;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 13px;
+        }
+
+        .row label {
+            width: 130px;
+            color: #555;
+            font-size: 14px;
+        }
+
+        .row input,
+        .row select,
+        .row textarea {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #ccc;
+            outline: none;
+        }
+
+        .row textarea {
+            height: 60px;
+            resize: none;
+        }
+
+        .gender {
+            display: flex;
+            gap: 15px;
+        }
+
+        .gender input {
+            flex: none;
+        }
+
+        .submit {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .submit button {
+            background: #0aa83b;
+            color: white;
+            border: none;
+            padding: 10px 40px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .submit button:hover {
+            background: #07852f;
+        }
+
+        /* RIGHT SIDEBAR */
+        .right {
+            width: 20%;
+            border-left: 1px solid #ddd;
+            padding: 30px 20px;
+        }
+
+        .right h2 {
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .info {
+            margin-bottom: 25px;
+        }
+
+        .info h4 {
+            color: #777;
+            margin-bottom: 5px;
+        }
+
+        .info p {
+            color: #999;
+            font-size: 13px;
+        }
+
+        /* MOBILE */
+        @media(max-width: 800px) {
+
+            .container {
+                flex-direction: column;
+            }
+
+            .left,
+            .form-section,
+            .right {
+                width: 100%;
+            }
+
+            .left {
+                padding: 40px;
+            }
+
+            .left h1 {
+                font-size: 30px;
+            }
+
+            .right {
+                border-left: none;
+                border-top: 1px solid #ddd;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- LEFT -->
+        <div class="left">
+            <h1>
+                Go Create<br>
+                Your Student<br>
+                Registration<br>
+                Form In Code
+            </h1>
+        </div>
+
+
+        <!-- FORM -->
+        <div class="form-section">
+
+            <h1>Student Registration Form</h1>
+
+            <form>
+
+                <div class="row">
+                    <label>Full Name</label>
+                    <input type="text">
+                </div>
+
+                <div class="row">
+                    <label>Father Name</label>
+                    <input type="text">
+                </div>
+
+                <div class="row">
+                    <label>Mother Name</label>
+                    <input type="text">
+                </div>
+
+                <div class="row">
+                    <label>Date of Birth</label>
+                    <input type="date">
+                </div>
+
+                <div class="row">
+                    <label>Mobile No.</label>
+                    <input type="tel">
+                </div>
+
+                <div class="row">
+                    <label>Email</label>
+                    <input type="email">
+                </div>
+
+                <div class="row">
+                    <label>Password</label>
+                    <input type="password">
+                </div>
+
+                <div class="row">
+                    <label>Gender</label>
+
+                    <div class="gender">
+                        <label>
+                            <input type="radio" name="gender">
+                            Male
+                        </label>
+
+                        <label>
+                            <input type="radio" name="gender">
+                            Female
+                        </label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label>Department</label>
+
+                    <select>
+                        <option>Select Department</option>
+                        <option>Computer Science</option>
+                        <option>AI & ML</option>
+                        <option>Electrical</option>
+                        <option>Mechanical</option>
+                    </select>
+                </div>
+
+                <div class="row">
+                    <label>Course</label>
+
+                    <select>
+                        <option>Select Course</option>
+                        <option>B.Tech</option>
+                        <option>M.Tech</option>
+                        <option>BCA</option>
+                        <option>MCA</option>
+                    </select>
+                </div>
+
+                <div class="row">
+                    <label>City</label>
+                    <input type="text">
+                </div>
+
+                <div class="row">
+                    <label>Address</label>
+                    <textarea></textarea>
+                </div>
+
+                <div class="submit">
+                    <button type="submit">Submit</button>
+                </div>
+
+            </form>
+        </div>
+
+
+        <!-- RIGHT SIDEBAR -->
+        <div class="right">
+
+            <h2>Quick Info</h2>
+
+            <div class="info">
+                <h4>👤 Students</h4>
+                <p>Manage student information</p>
+            </div>
+
+            <div class="info">
+                <h4>📚 Courses</h4>
+                <p>B.Tech, BCA, MCA and more</p>
+            </div>
+
+            <div class="info">
+                <h4>💻 Skills</h4>
+                <p>Programming and technical skills</p>
+            </div>
+
+            <div class="info">
+                <h4>🎓 Category</h4>
+                <p>Student Registration</p>
+            </div>
+
+            <div class="info">
+                <h4>📋 Type</h4>
+                <p>Student Registration Form</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body
+</head>
+<body>
+    
+</body>
+</html>
